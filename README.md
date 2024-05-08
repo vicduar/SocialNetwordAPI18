@@ -4,7 +4,7 @@ Unit 11 Challenge
 
 Work on this project was implemented at the request of the client, whose user story stated the following: "AS A social media startup I WANT an API for my social network that uses a NoSQL database SO THAT my website can handle large amounts of unstructured data."
 
-The Challenge for this project was to build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. To do this, the following will be used for successful completion: Express.js for routing, a MongoDB database, the Mongoose ODM for the open-source NoSQL database management system, and Insomnia to test the functionality of the finished product. In addition to using the Express.js and Mongoose packages, an optional inclusion was to use a JavaScript date library of my choosing, or the native JavaScript `Date` object, to format timestamps; I elected not to utilize this option for this project.
+The Challenge for this project was to build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. To do this, the following will be used for successful completion: Express.js for routing, a MongoDB database, the Mongoose ODM for the open-source NoSQL database management system, and Insomnia to test the functionality of the finished product. In addition to using the Express.js and Mongoose packages, an optional inclusion was to use a JavaScript date library of my choosing, or the native JavaScript `Date' object, to format timestamps; I elected not to utilize this option for this project.
 
 ##Acceptance Criteria:
 
@@ -32,7 +32,7 @@ The project was created using VS Code editor where Express.js was used for routi
 
 References
 
-Github (2024). A free webservice for storing and deploying websites. Multiple pages retrieved and utilized from www.github.com April 20, 2024.
+Github (2024). A free web-service for storing and deploying websites. Multiple pages retrieved and utilized from www.github.com April 20, 2024.
 
 MDN (April 20, 2024). Mozilla resources for developers. Multiple pages retrieved from https://developer.mozilla.org/en-US/ .
 
