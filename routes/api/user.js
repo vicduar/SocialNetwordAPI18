@@ -25,6 +25,7 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+
 router.post("/", async (req, res) => {
   try {
     const newUser = await User.create(req.body);
@@ -35,12 +36,11 @@ router.post("/", async (req, res) => {
 });
 
 //post for friends
-router.post("/:userId/friends", async (req, res) => {
+router.post("/:userId/friends/:friendId", async (req, res) => {
   try {
-    const findFriend = await User.findOne({ username: req.body.username });
     const userData = await User.findOneAndUpdate(
       { _id: req.params.userId },
-      { $addToSet: { friends: findFriend._id } },
+      { $addToSet: { friends: req.params.friendId } },
       { new: true }
     );
     res.status(200).json(userData);
@@ -48,12 +48,12 @@ router.post("/:userId/friends", async (req, res) => {
     res.status(500).json(err);
   }
 });
-
+//update. new set of data on the user.
 router.put("/:id", async (req, res) => {
   try {
     const user = await User.findOneAndUpdate(
       { _id: req.params.id },
-      { $set: req.body }
+      { $set: req.body },{runValidators:true, new:true}
     );
     res.status(200).json(user);
   } catch (err) {
