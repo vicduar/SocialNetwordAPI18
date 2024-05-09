@@ -1,4 +1,4 @@
-Unit 11 Challenge
+Unit 18 Challenge
 
 #Description:
 
@@ -22,11 +22,17 @@ Github Repo Link:
 
 https://github.com/vicduar/SocialNetwordAPI18.git
 
+Screencastify Link: 
+
+https://drive.google.com/file/d/170Bm8B9sEPtn_-9Y5BXmnGUm_XAttK2m/view
+
+
 ##Installation:
 
-The project was created using VS Code editor where Express.js was used for routing, MongoDB for the database, and the Mongoose ODM library. It was then uploaded to a Github repository.******************
+The project was created using VS Code editor where Express.js was used for routing, MongoDB for the database, and the Mongoose ODM library. Once complete, the project was uploaded to a Github repository.
 
 ##Usage:
+In order to have the server restart automatically, nodemon has been selected as the server start command. This is entered into the integrated terminal in VS Code. Insomnia is loaded and the server connection is made. Then, testing of each function (Get, Post, Put, Thought, and Delete) is performed in Insomnia.
 
 ##Contributions:
 
@@ -36,7 +42,7 @@ Github (2024). A free web-service for storing and deploying websites. Multiple p
 
 MDN (April 20, 2024). Mozilla resources for developers. Multiple pages retrieved from https://developer.mozilla.org/en-US/ .
 
-Meyers, M. (2024, May 7-8). Tutoring session via Www.zoom.us . Denver University Bootcamp.
+Meyers, M. (2024, May 7-9). Tutoring session via Www.zoom.us . Denver University Bootcamp.
 
 NPM (2024, May 7). Node.js website. Retrieved from https://www.npmjs.com/package/inquirer .
 
