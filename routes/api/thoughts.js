@@ -59,7 +59,7 @@ router.put("/:id", async (req, res) => {
   try {
     const thoughtData = await Thought.findOneAndUpdate(
       { _id: req.params.id },
-      { $set: req.body }
+      { $set: req.body },{new:true}
     );
     if(!thoughtData) 
       return res.status(404).json("Thought not found");
@@ -92,7 +92,7 @@ router.delete("/:id", async (req, res) => {
 router.delete("/:thoughtId/reaction/:reactionId", async (req, res) => {
   try {
    
-    const thoughtData = await User.findOneAndUpdate(
+    const thoughtData = await Thought.findOneAndUpdate(
       { _id: req.params.thoughtId },
       { $pull: { reactions: { reactionId: req.params.reactionId } } },
       { new: true }

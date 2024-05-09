@@ -77,7 +77,7 @@ router.delete("/:userId/friends/:friendsId", async (req, res) => {
   try {
     const userData = await User.findOneAndUpdate(
       { _id: req.params.userId },
-      { $pull: { friends: { friendsId: req.params.friendsId } } },
+      { $pull: { friends: req.params.friendsId } },
       { new: true }
     );
     res.status(200).json("Deleted Successfully");
